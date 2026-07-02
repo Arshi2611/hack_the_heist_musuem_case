@@ -407,6 +407,536 @@ Great work, everyone!
 <p><strong>Aperture:</strong> f/1.8</p>
 <p><strong>OS Version </strong> iOS 18.2</p>
 <p><strong>GPS Coordinates:</strong>32.66504115712944 N, -117.0327455568467 W</p>
+<p><strong>GPS Application :</strong> APPLE MAPS</p>
+<p><strong>Device ID:</strong> iPhone13-AX91</p>
+</div>
+    
+    </div>
+</div>
+
+
+<div id="documentScreen" class="screen hidden">
+
+  <h2 class="docTitle">RECOVERED DOCUMENT</h2>
+
+  <div class="toolbar">
+    <button id="boldBtn"><strong>B</strong></button>
+    <button id="italicBtn"><em>I</em></button>
+    <button id="underlineBtn"><u>U</u></button>
+
+    <div class="divider"></div>
+
+    <label class="toolButton">
+      H
+      <input type="color" id="highlightColor" value="#ffff00">
+    </label>
+  </div>
+
+
+  <!-- ✅ MOVE PAPER INSIDE HERE -->
+  <div id="paper" class="paper" contenteditable="true">
+
+    <h3>Museum Inventory Report</h3>
+
+    <p>
+      Inventory inspection completed on June 14. <br>
+      All display cases were checked before closing.
+    </p>
+
+    <p class="hide">
+      username: E356098 <br>
+      password: Destiny45
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+<div id="loginScreen" class="screen hidden">
+
+  <h2 class="docTitle">Unknown Login</h2>
+
+ 
+    <div class="loginBox">
+
+        
+
+        <label>Username</label><br>
+        <input type="text" id="usernameInput" autocomplete="off"><br><br>
+
+        <label>Password</label><br>
+        <input type="password" id="passwordInput"><br><br>
+
+        <button id="loginSubmit">Login</button>
+
+        <p id="loginError" class="hidden errorMessage">
+            Incorrect username or password.
+        </p>
+
+    </div>
+
+</div>
+
+
+  
+
+<div id= "marketScreen" class="screen hidden">  
+  <h2 class = "docTitle">Black Market Transactions</h2>
+    <h3 > Welcome back, Marcus Reed!</h3>
+   
+
+    <p><strong>Active Listing:</strong> Golden Phoenix</p>
+
+    <p><strong>Buyer:</strong> ArtDealer</p>
+
+    <p><strong>Offer:</strong> $4,850,000</p>
+
+<button class="unlist" id="unlistItemBtn"> UNLIST ITEM </button>
+</div>
+
+<div id= "unlisted" class ="screen hidden">
+  <h2 class = "docTitle">Item successfully unlisted and now will not be sold.</h2>
+</div>
+
+<div id="caseScreen" class="screen hidden" >
+  <h2 class="docTitle">Case Report</h2>
+  <p> Fill in the details of the case here. Please be careful of capitialization, spelling and formatting. </p>
+  <div class="caseReport">
+
+        <p><strong>Case:</strong> Golden Phoenix Theft</p>
+        <p><strong>Date:</strong> June 14, 2026</p>
+
+        <br>
+
+        <label>Estimated Time of Theft</label><br>
+        <input type="text" id="timeAnswer" placeholder="Example: 4:42 AM-4:45 AM">
+
+        <br><br>
+
+        <label>Last Known Artifact Location (General Vicinity) </label><br>
+        <input type="text" id="locationAnswer" placeholder="Example: Loading Dock">
+
+        <br><br>
+
+        <label>Primary Culprit</label><br>
+        <input type="text" id="culpritAnswer" placeholder="Employee Full Name">
+
+        <br><br>
+
+        <label>Accomplice</label><br>
+        <input type="text" id="accompliceAnswer" placeholder="Email Address">
+
+        <br><br>
+
+        <label>Was the stolen artifact successfully removed from the Black Market listing?</label>
+
+        <br><br>
+
+        <label>
+            <input type="radio" name="unlisted" value="yes">
+            Yes
+        </label>
+
+        <label style="margin-left:25px;">
+            <input type="radio" name="unlisted" value="no">
+            No
+        </label>
+
+        <br><br><br>
+
+        <button id="submitCaseBtn">SUBMIT CASE REPORT</button>
+
+        <p id="caseResult" class="hidden"></p>
+
+    </div>
+
+</div>
+ 
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+    <!-- Notes Panel -->
+    <div id="notesPanel" class="notesPanel">
+
+        <h2>Notes</h2>
+
+        <textarea 
+            id="notesArea"
+            placeholder="Type your investigation notes here..."></textarea>
+
+    </div>
+
+
+  <!-- SCREEN 1: CASE ALERT -->
+  <div id="caseAlertScreen" class="screen">
+    <h1 class="title">CASE ALERT</h1>
+
+    <p class="subtext">
+
+      A priceless museum artifact has been stolen on June 14, 2026.<br><br>
+      The suspect is believed to be an insider.<br><br>
+      Digital evidence has been recovered.
+    </p>
+    
+    <button id="proceedBtn">Proceed</button>
+    <h4 class=" version " > Hack the Heist : The Museum Case <br> <br>
+      Version 1 - Created by Arshi Agrawal. 5.25.2026-6.30.2026 </h4>
+
+  </div>
+
+  <!-- SCREEN 2: MISSION BRIEF -->
+  <div id="missionScreen" class="screen hidden">
+    <h1 class="title">WELCOME, DETECTIVE</h1>
+
+    <p class="subtext">
+
+      The Golden Phoenix artifact disappeared shortly after the museum closed.<br><br>
+      Stop the seller from selling the artifact!!
+      Your job is to analyze recovered digital evidence and identify: 
+
+    </p>
+
+    <ul class="front">
+      <li>Time of Theft</li>
+      <li>Artifact Location</li>
+      <li>Culprit</li>
+      <li>Accomplice</li>
+    </ul>
+
+    <p class= "front">
+      Additional evidence will unlock as you progress.
+    </p>
+
+    <button id="beginBtn">Begin Investigation</button>
+  </div>
+
+  <!-- SCREEN 3: DESKTOP --> 
+  
+<div id="desktopScreen" class="screen hidden">
+
+    
+    <h2>Museum Investigation System</h2>
+
+    <div  class="folder">
+      <button id="logBtn">Security Logs</button>
+    </div>
+
+    <div class="folder">
+      <button id="employeeBtn">Employee Files</button>
+    </div>
+
+
+    <div id="emailFolder" class="folder locked">
+    <button id="emailBtn">Emails</button>
+    </div>
+
+    <div id="photosFolder" class="folder locked">
+      <button id="photosBtn">Photos</button>
+    </div>
+
+    <div id="documentsFolder" class="folder locked">
+      <button id="documentsBtn">Documents</button>
+    </div>
+    <div id = "NewEmailFolder" class="folder locked">
+      <button id = "newEmailBtn">New Emails</button>
+      </div>
+
+    <div id="loginFolder" class="folder locked">
+      <button id="loginBtn">Museum Login</button>
+    </div>
+
+    <div id="caseFolder" class="folder locked">
+      <button id="caseBtn">Case Report</button>
+    </div>
+      
+  </div>
+  
+
+  <!-- SCREEN 4: LOGS -->
+  <div id="logScreen" class="screen hidden internal">
+
+    <h2>Security Logs</h2>
+
+    <p class="subtext">
+      Here are the security logs for the night of the theft.
+    </p>
+    <div class="imageGrid">
+
+      <img src="logs5.jpeg">
+      <img src="logs1.jpeg">
+      <img src="logs2.jpeg">
+      <img src="logs6.jpeg">
+
+      <img src="logs3.jpeg">
+      <img src="logs4.jpeg">
+      <img src="logs7.jpeg">
+      <img src="logs8.jpeg">  
+      <img src="logs.jpeg">
+      
+    </div>  
+    </div>
+    </div>
+
+
+  </div>
+
+<!--EMPLOYEE-->
+  <div id = "employeeFilesScreen" class="screen hidden internal">
+    <h2>Employee Files</h2>
+    <p class="subtext">
+      Here are the employee files for the museum. Look through them all.
+
+    </p>
+  <div id="avaID" class="screen">
+    <img class="employee-image" src="ava.png">
+    <button class = "btn" id="avaBack">Previous</button>
+    <button  class = "btn" id="avaNext">Next </button>
+</div>
+
+<div id="lucyID" class="screen hidden">
+    <img class="employee-image" src="lucy1.png">
+    <button class = "btn" id="lucyBack">Previous</button>
+    <button class = "btn" id="lucyNext">Next </button>
+</div>
+
+<div id="marcusID" class="screen hidden">
+    <img class="employee-image" src="marcus.png">
+    <button class = "btn" id="marcusBack">Previous</button>
+    <button class = "btn" id="marcusNext">Next</button>
+</div>
+
+<div id="elenaID" class="screen hidden">
+    <img class="employee-image" src="elena.png">
+    <button class = "btn" id="elenaBack">Previous</button>
+    <button class = "btn" id="elenaNext">Next</button>
+</div>
+
+<div id="noahID" class="screen hidden">
+    <img class="employee-image" src="noah.png">
+    <button class = "btn" id="noahBack">Previous</button>
+    <button class = "btn" id="noahNext">Next</button>
+</div>
+</div>
+
+
+<!--EMAILS-->
+
+<div id="emailScreen" class="screen hidden">
+
+    <h2>Emails</h2>
+
+    <pre class="terminal">
+=========================================================
+MUSEUM MAIL SERVER
+Recovered Mail Archive
+Archive Status: PARTIALLY CORRUPTED
+Recovery Date: 06/14/2026
+=========================================================
+
+Initializing recovery...
+Loading mailbox index...
+Restoring deleted messages...
+Recovered: 417 files
+Corrupted: 39 files
+Unknown: 12 files
+
+---------------------------------------------------------
+MAIL ID: 9C2A14
+FROM: payroll@museum.org
+TO: allstaff@museum.org
+SUBJECT: Payroll Reminder
+
+Direct deposit forms must be submitted by Friday.
+---------------------------------------------------------
+
+MAIL ID: F8A113
+FROM: maintenance@museum.org
+TO: staff@museum.org
+SUBJECT: Elevator Inspection
+
+The east elevator will be unavailable from
+9:00 AM to 11:30 AM on Tuesday.
+---------------------------------------------------------
+
+MAIL ID: 4E912C
+FROM: lucy.williams@museum.org
+TO: ava.chen@museum.org
+SUBJECT: Happy Birthday!
+
+Hey Ava!
+
+Happy Birthday!! 🎉
+
+Let's celebrate after work tonight.
+Reservation is at Harbor Bistro for 6:30 PM.
+
+See you there!
+- Lucy
+
+---------------------------------------------------------
+
+MAIL ID: 7D8C10
+FROM: events@museum.org
+TO: volunteers@museum.org
+SUBJECT: Weekend Event
+
+Please arrive by 8:00 AM Saturday.
+---------------------------------------------------------
+
+MAIL ID: A12B8F
+FROM: ithelp@museum.org
+TO: allstaff@museum.org
+SUBJECT: Password Reset Reminder
+
+Remember never to share your password.
+---------------------------------------------------------
+
+MAIL ID: 91AA22
+FROM: museumnews@museum.org
+TO: staff@museum.org
+SUBJECT: Monthly Newsletter
+
+Congratulations to the Education Department
+for reaching 10,000 student visitors!
+---------------------------------------------------------
+
+MAIL ID: C0FF12
+ERROR: MESSAGE CORRUPTED
+Recovering...
+Recovering...
+FAILED
+---------------------------------------------------------
+
+END OF RECOVERED MESSAGES
+    </pre>
+    
+    
+      <button id="Done">Done</button>
+</div>
+<div id="photosScreen" class="screen hidden">
+
+    <h2>Photos</h2>
+    
+      <img class="image" src="lucy+ava.jpeg" alt="Photo 1">
+       <button class="btn" id="metaBtn">View Metadata</button>
+
+    <div id="metaPanel" class="hidden metaPanel">
+        <p><strong>File Name:</strong> 4567028384bfgde.jpeg</p>
+        <p><strong>Created:</strong> 06/14/2026 19:08</p>
+        <p><strong>Location:</strong> Harbor Bistro, Dockside District</p>
+        <p><strong>Device:</strong> Lucy's IPhone 14 Pro</p>
+    </div>
+
+</div>
+<div id="NewEmails" class="screen hidden">
+    <h2>New Emails</h2>
+
+    <div class="terminal">
+<pre>---------------------------------------------------------
+MAIL ID: 82D41B
+FROM: education@museum.org
+TO: staff@museum.org
+SUBJECT: School Tours
+
+Three elementary school groups will be
+visiting tomorrow morning.
+
+Please expect heavier traffic in the
+Ancient History Wing between 9:30 AM
+and 12:00 PM.
+---------------------------------------------------------
+
+MAIL ID: A91F6C
+FROM: giftshop@museum.org
+TO: allstaff@museum.org
+SUBJECT: New Inventory Arrival
+
+The museum gift shop has received new
+books, postcards, and exhibit souvenirs.
+
+Items will be available for purchase
+starting Friday.
+---------------------------------------------------------
+
+MAIL ID: 4CB883
+FROM: conservation@museum.org
+TO: collections@museum.org
+SUBJECT: Climate Check Complete
+
+Routine temperature and humidity checks
+have been completed for all exhibit halls.
+
+All readings are within recommended levels.
+---------------------------------------------------------
+
+MAIL ID: 7A0C31
+FROM: mr308@museum.org
+TO: artdealer@protonmail.com
+SUBJECT: Re:
+
+got em.
+<span id="viewAttachmentBtn" class="terminalLink">[ View Attachment ]</span>
+---------------------------------------------------------
+
+MAIL ID: D8A250
+FROM: cafe@museum.org
+TO: staff@museum.org
+SUBJECT: Weekly Lunch Special
+
+This week's lunch special is:
+
+• Tomato Basil Soup
+• Grilled Cheese Sandwich
+• Fresh Fruit Cup
+
+Available Monday through Friday.
+---------------------------------------------------------
+
+MAIL ID: F19E74
+FROM: director@museum.org
+TO: allstaff@museum.org
+SUBJECT: Thank You
+
+Thank you to everyone who helped make
+Family Day a success.
+
+We welcomed over 2,300 visitors this
+weekend, our highest attendance this year.
+
+Great work, everyone!
+---------------------------------------------------------
+</pre>
+    </div>
+</div>
+<div id="attachmentScreen" class="screen hidden">
+    <h2>Attachment</h2>
+    <img class="image" src="attachment.jpeg" alt="Attachment">
+     <button class="btn" id="metaBtn2">View Metadata</button>
+
+    <div id="metaPanel2" class="hidden metaPanel">
+       <p><strong>File Name:</strong> 0987bsbeyrbvjs33.jpeg</p>
+        <p><strong>Created:</strong> 06/14/2026 19:47</p>
+   
+<p><strong>File Size:</strong> 3.2 MB</p>
+<p><strong>File Type:</strong> JPEG</p>
+<p><strong>Resolution:</strong> 4032 x 3024</p>
+<p><strong>Aspect Ratio:</strong> 4:3</p>
+<p><strong>Color Profile:</strong> sRGB</p>
+<p><strong>Camera:</strong> iPhone 13 </p>
+<p><strong>ISO:</strong> 200</p>
+<p><strong>Shutter Speed:</strong> 1/250s</p>
+<p><strong>Aperture:</strong> f/1.8</p>
+<p><strong>OS Version </strong> iOS 18.2</p>
+<p><strong>GPS Coordinates:</strong>32.66504115712944 N, -117.0327455568467 W</p>
 <p><strong>Device ID:</strong> iPhone13-AX91</p>
 </div>
     
